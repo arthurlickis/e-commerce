@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="icon" href="/assets/images/social/ProfileIcon.png" type="image/png">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <title>Chekout</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container header">
+        <div class="bar" style="justify-content: center;">
+            <h1 class="title title--logo"><a href="index.html">Store</a></h1>
+            <div class="bar__item search">
+                <input type="search" placeholder="Pesquise" id="search">
+                <i class="ph ph-magnifying-glass icon icon--search"></i>
+            </div>
+        </div>
+        </header>
+        <div class="wrapper-hero-banner">
+        </div>
+        <div class="wrapper">
+            <section class="container checkout">
+                <form class="form-checkout">
+                    <h2 class="title">Detalhes da compra</h2>
+                    <label for="name" class="title">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Ex: Arthur" maxlength="50" class="form-checkout__input name">
+                    
+                    <label for="e-mail" class="title">E-mail</label>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="Ex: arthur.raulickisjob@gmail.com" maxlength="50" class="form-checkout__input email">
+                
+                    <label for="cpf" class="title">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Ex: 123.456.789-00" maxlength="14" class="form-checkout__input cpf">
+                    
+                    <label for="endereco" class="title">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua Exemplo, 2025" maxlength="50" class="form-checkout__input address">
+                    
+                    <section class="form-checkout__product">
+                        <h3 class="title">Produto</h3>
+                        <p class="no-highlight form-checkout__product__name"></h3>
+                        <p class="no-highlight form-checkout__product__qtd"></p>
+                        <p class="title">Subtotal: <span class="no-highlight form-checkout__product__subtotal">R$ 00m00</span></p>
+                        <p class="title">Total: <span class="no-highlight form-checkout__product__total">R$ 00m00</span></p>
+                    </section>
+
+                    <input type="submit" value="Finalizar compra" class="go-checkout finish-product">
+                </form>
+            </section>
+        </div>
+        <div class="wrapper-dark">
+            <footer class="container footer">
+                <p class="footer__text">Feito por <a href="https://portfolio-arthurr.netlify.app/" class="footer__highlight">Arthur Raulickis</a></p>
+            </footer>
+        </div>
+        <script type="module" src="/assets/js/checkout.js"></script>
+</body>
+</html>

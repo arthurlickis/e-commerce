@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="icon" href="/assets/images/social/ProfileIcon.png" type="image/png">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <title>Product</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container header">
+        <div class="bar">
+            <h1 class="title title--logo"><a href="index.html">Store</a></h1>
+            <div class="bar__item search">
+                <input type="text" placeholder="Pesquise" id="search">
+                <i class="ph ph-magnifying-glass icon icon--search"></i>
+            </div>
+            <div class="bar__item">
+                <div class="backdrop"></div>
+                <button id="shopping-cart">
+                    <i class="ph ph-shopping-cart-simple icon"></i>
+                </button>
+                <div class="shopping-cart__items">
+                    <i class="ph ph-x icon" id="close-shopping-cart"></i>
+                    <h2 class="title title--cart">Meu carrinho</h2>
+                    <div class="products-scroll">
+                        <p class="cart-empty">O carrinho está vazio! Adicione pelo menos um produto.</p>
+                    </div>
+                    <p>Total: <span class="shopping-cart__items__product__details__price shopping-cart-total"> R$ 00,00</span></p>
+                    <a href="checkout.html" class="go-checkout">Finalizar pedido</a>
+                   <div class="shopping-cart__remove">
+                        <button class="remove-all">Limpar carrinho</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <div class="wrapper">
+            <main class="main">
+                <div class="container">
+                    <section class="products-details">
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div class="wrapper-dark">
+            <footer class="container footer">
+                <p class="footer__text">Feito por <a href="https://portfolio-arthurr.netlify.app/" class="footer__highlight">Arthur Raulickis</a></p>
+            </footer>
+        </div>
+        <script type="module" src="/assets/js/product.js"></script>
+</body>
+</html>
